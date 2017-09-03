@@ -1,0 +1,9 @@
+.selected-language {
+  background-color: blue;
+  color: white;
+}
+
+:host ::ng-deep .money-input {
+  text-align: right;
+  color:blue;
+}
