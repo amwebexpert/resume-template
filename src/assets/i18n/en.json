@@ -1,0 +1,51 @@
+{
+    "welcome.title": "Welcome!",
+    "welcome.text": "Welcome to the currency mask for Angular 2 using Numeral.js. This is a simple component which handle money format from user input. The components demonstrates the target format as user type and also react to locale change events.",
+
+    "menu.home": "Home",
+    "menu.more": "More",
+    "menu.about": "About",
+    "menu.language": "Language",
+    "menu.language.english": "English",
+    "menu.language.french": "Français",
+
+    "amount.input": "User input:",
+    "amount.form": "Form object:",
+    "amount.formatted": "Formatted amount:",
+    "amount.placeholder": "type amount",
+
+    "about.title.description": "About this application...",
+    "about.title.version": "Version",
+    "about.title.copyright": "Copyrights",
+    "about.title.opensource": "Open source",
+    "about.opensource.notice": "This software uses open source libraries distibuted under the following licences:",
+
+    "generic.network.error": "Network error. Please verify the server address and internet connection and try again.",
+    "generic.start": "Start",
+    "generic.stop": "Stop",
+    "generic.refresh" : "Refresh",
+    "generic.ok" : "OK",
+    "generic.delete" : "Delete",
+    "generic.save" : "Save",
+    "generic.submit" : "Save",
+    "generic.cancel" : "Cancel",
+    "generic.add" : "Add",
+    "generic.remove" : "Remove",
+    "generic.modify" : "Modify",
+    "generic.yes" : "Yes",
+    "generic.no" : "No",
+    "generic.searching": "Searching :",
+    "generic.message.technical.error" : "A technical error has occured.",
+    "generic.message.save.success" : "Data saved successfuly",
+    "generic.title.info" : "Information",
+    "generic.title.error" : "Error",
+    "generic.title.warning" : "Warning",
+    "generic.question.delete": "Remove this item?",
+    "generic.confirm.title": "Confirmation",
+
+    "validation.required": "You must provide a value for this field",
+    "validation.pattern": "Invalid value for this field",
+    "validation.range": "Field value out of bounds",
+    "validation.range.explicit": "Value must be within {{min}} and {{max}} range"
+
+}

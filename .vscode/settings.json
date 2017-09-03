@@ -1,0 +1,44 @@
+// Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut et les paramètres utilisateur.
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/Web-win32-x64": true,
+        "**/node_modules": true,
+        "**/*.gitignore": true,
+        "**/.svn": true,
+        "**/.DS_Store": true,
+        "**/*.js": true,
+        //"**/*.js": { "when": "$(basename).ts"},
+        "**/*.js.map": true
+    },
+    "editor.trimAutoWhitespace": true,
+    "files.trimTrailingWhitespace": true,
+    "editor.renderWhitespace": "none",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": true,
+    "editor.tabSize": 4,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 300,
+    "files.insertFinalNewline": true,
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/package.json"
+            ],
+            "url": "http://json.schemastore.org/package"
+        },
+        {
+            "fileMatch": [
+                "/tslint.json"
+            ],
+            "url": "http://json.schemastore.org/tslint"
+        },
+        {
+            "fileMatch": [
+                "/src/tsconfig.json"
+            ],
+            "url": "http://json.schemastore.org/tsconfig"
+        }
+    ],
+    "vsicons.presets.angular": true
+}

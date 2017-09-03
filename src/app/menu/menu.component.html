@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+  <a class="navbar-brand" routerLink="/home">{{title}}</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home">{{ 'menu.home' | translate }}</a>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ 'menu.language' | translate }}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+          <a class="dropdown-item" (click)="changeLanguageTo('fr')">{{ 'menu.language.french' | translate }}</a>
+          <a class="dropdown-item" (click)="changeLanguageTo('en')">{{ 'menu.language.english' | translate }}</a>
+        </div>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{ 'menu.more' | translate }}
+        </a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+          <a class="dropdown-item" routerLink="/about">{{ 'menu.about' | translate }}</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
+</nav>
