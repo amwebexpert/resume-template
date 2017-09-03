@@ -10,7 +10,7 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
 })
 export class MenuComponent implements OnInit {
 
-  title = AppConstants.APP_TITLE_VERSION;
+  title = AppConstants.APP_TITLE;
 
   constructor(
     private translateService: TranslateService) {

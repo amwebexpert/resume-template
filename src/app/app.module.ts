@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Http } from '@angular/http';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {
   MissingTranslationHandler,
@@ -33,6 +33,7 @@ export function createTranslateLoader(pHttp: Http) {
     AppRoutingModule,
   ],
   providers: [
+    Title,
     {
       provide: MissingTranslationHandler,
       useClass: AppMissingTranslationHandler
