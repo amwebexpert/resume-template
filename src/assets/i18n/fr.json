@@ -1,6 +1,6 @@
 {
     "welcome.title": "Bienvenue !",
-    "welcome.text": "Bienvenu dans l'application. Ceci est une démonstration de l'utilisation des composantes Angular pour permette la saisie de montants dans plusieurs langues.",
+    "welcome.text": "Fondée en 2005, A.M. Web Expert Inc. oeuvre dans l'architecture, la conception et la programmation...",
 
     "menu.home": "Accueil",
     "menu.more": "Plus",
@@ -9,10 +9,7 @@
     "menu.language.english": "English",
     "menu.language.french": "Français",
 
-    "amount.input": "Saisie :",
-    "amount.form": "Objet form :",
-    "amount.formatted": "Montant formatté :",
-    "amount.placeholder": "inscrivez montant",
+    "welcome.see.more": "En savoir plus...",
 
     "about.title.description": "À propos de cette application...",
     "about.title.version": "Version",
