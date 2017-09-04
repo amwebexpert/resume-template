@@ -1,9 +1,9 @@
-<div class="jumbotron">
+<div class="alert alert-success" role="alert">
 
   <h2>{{ 'welcome.title' | translate }}</h2>
   <p>{{ 'welcome.text' | translate }}</p>
 
-  <input *ngIf="!seeMore" type="button" class="btn btn-primary" (click)="onSeeMore()" value="{{ 'welcome.see.more' | translate }}">
+  <input *ngIf="!seeMore" type="button" class="btn btn-success" (click)="onSeeMore()" value="{{ 'welcome.see.more' | translate }}">
 
   <ng-container *ngIf="seeMore">
     <div *ngIf="lang == 'fr'">
