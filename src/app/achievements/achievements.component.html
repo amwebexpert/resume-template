@@ -1,3 +1,77 @@
-<p>
-  achievements works!
-</p>
+<div class="alert alert-success" role="alert">
+
+  <h2>{{ 'menu.achievements' | translate }}</h2>
+
+  <div *ngIf="lang == 'fr'">
+    <p>L'expertise de A.M. Web Expert Inc. a permit de livrer plusieurs projets de grande envergure et également de réaliser
+      des applications mobiles distribuées à des centaine de milliers d'utilisateurs.</p>
+  </div>
+
+  <div *ngIf="lang == 'en'">
+    <p>The expertise of A.M. Web Expert Inc. has enabled us to deliver several large-scale projects and mobile applications
+      distributed to hundreds of thousands of users.</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <a href="https://accesd.desjardins.com/">Desjardins</a>
+    <ul *ngIf="lang == 'fr'">
+      <li>Acquisition de Fonds sur AccesD</li>
+      <li>NEI Electronic Documents</li>
+      <li>Envoie électronique sur AccesD</li>
+      <li>Acquisition de PGLM sur AccesD</li>
+      <li>Infrastructures applicatives d'entreprise</li>
+    </ul>
+    <ul *ngIf="lang == 'en'">
+      <li>AccesD platform Funds management</li>
+      <li>NEI Electronic Documents</li>
+      <li>AccesD platform electronic documents</li>
+      <li>AccesD platform PGLM management</li>
+      <li>AccesD N3 Frameworks</li>
+    </ul>
+
+    <a href="http://www.cyberpresse.ca/">La presse</a>
+    <ul *ngIf="lang == 'fr'">
+      <li>Module Java pour la communication avec Météo Média pour la récupération des données</li>
+      <li>Module de fusionnement automatisé des mod&#232;les d'affichage des statistiques météos</li>
+    </ul>
+    <ul *ngIf="lang == 'en'">
+      <li>Java FTP module for retrieving Météo Média core data</li>
+      <li>Weather templates for displaying statistics</li>
+    </ul>
+  </div>
+
+  <div class="col-md-3">
+    <a href="https://developer.android.com/">Android</a>
+    <p>Google Play - Applications</p>
+    <ul>
+      <li><img src="/assets/img/icon-ecell.png" /> <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.pro">e-Droid-Cell Pro</a></li>
+      <li class="android-app"><img src="/assets/img/icon-wireless-copy-paste.png" width="32px;" /> <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.btfm">Wireless CopyPaste</a></li>
+      <li class="android-app"><img src="/assets/img/icon-calc.png" /> <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.calc">Calculator Mem Pro</a></li>
+      <li class="android-app"><img src="/assets/img/icon-alert.png" /> <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.atracker">Alert Responder</a></li>
+      <li class="android-app"><img src="/assets/img/icon-tipcalc.png" width="32px;" /> <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.percent.beta">Tip Calculator</a></li>
+      <li class="android-app"><img src="/assets/img/icon-slavedevice.png" width="32px;" /> <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.slavedevice.pro">Slave Device</a></li>
+      <li class="android-app"><img src="/assets/img/icon-agiqcollect.png" width="32px;" /> <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.agiqcollect">AgIQ&reg; Collect</a></li>
+    </ul>
+  </div>
+
+  <div class="col-md-5">
+    <a href="http://www.clubvoyagestourbec.com/cvt/index.php">Club Voyages</a>
+    <ul *ngIf="lang == 'fr'">
+      <li>Conception et mise en page</li>
+      <li>Module de gestion des spéciaux de voyages en ligne</li>
+      <li>Programmation de phorums, chatting, gestion documentaire dynamique</li>
+    </ul>
+    <ul *ngIf="lang == 'en'">
+      <li>Web pages design</li>
+      <li>Special Travel Management Module</li>
+      <li>Discussion spaces, online exchanges, dynamic document management</li>
+    </ul>
+    <a href="http://www.armm.ca">ARMM</a>
+    <ul>
+      <li>Drug research module</li>
+      <li>Membership management screens</li>
+    </ul>
+  </div>
+</div>

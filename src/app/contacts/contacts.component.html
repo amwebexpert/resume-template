@@ -1,3 +1,17 @@
-<p>
-  contacts works!
-</p>
+<div class="alert alert-success" role="alert">
+
+  <h3>{{ 'menu.contacts' | translate }}</h3>
+
+  <p *ngIf="lang == 'fr'">Vous avez un mandat potentiel requérant l'expertise de A.M. Web Expert Inc. ?</p>
+  <p *ngIf="lang == 'en'">You have a potential mandate requiring our expertise?</p>
+
+</div>
+
+<div class="row">
+  <div class="col-md-6 text-center">
+    <p><img src="/assets/img/phone.png" /> <em>514-928-7658</em></p>
+  </div>
+  <div class="col-md-6 text-center">
+    <p><img src="/assets/img/mail.png" /> <em><a href="mailto:amwebexpert@gmail.com">amwebexpert@gmail.com</a></em></p>
+  </div>
+</div>
