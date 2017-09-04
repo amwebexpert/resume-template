@@ -1,34 +1,30 @@
-<div class="jumbotron">
+<div class="alert alert-success" role="alert">
 
   <h2>{{ 'welcome.title' | translate }}</h2>
   <p>{{ 'welcome.text' | translate }}</p>
 
-  <input *ngIf="!seeMore" type="button" class="btn btn-primary" (click)="onSeeMore()" value="{{ 'welcome.see.more' | translate }}">
+  <div *ngIf="lang == 'fr'">
+    <p>Notre objectif principal est d'assister les entreprise &#224; d&#233;velopper des applications permettant d'automatiser
+      leurs processus d'affaires. Certaine de nos applications sont distribu&#233;es &#224; travers le monde sur des t&#233;l&#233;phones
+      intelligents ainsi que des tablettes!</p>
+    <p>Nous croyons...</p>
+    <ul>
+      <li>Que la qualité a toujours sa place dans la conception de logiciels</li>
+      <li>Que des utilisateurs satisfaits sont une preuve de réussite</li>
+      <li>Que le code source est question d'expérience, de compétence et de discipline</li>
+    </ul>
+  </div>
 
-  <ng-container *ngIf="seeMore">
-    <div *ngIf="lang == 'fr'">
-      <p>Notre objectif principal est d'assister les entreprise &#224; d&#233;velopper des applications permettant d'automatiser
-        leurs processus d'affaires. Certaine de nos applications sont distribu&#233;es &#224; travers le monde sur des t&#233;l&#233;phones
-        intelligents ainsi que des tablettes!</p>
-      <p>Nous croyons...</p>
-      <ul>
-        <li>Que la qualité a toujours sa place dans la conception de logiciels</li>
-        <li>Que des utilisateurs satisfaits sont une preuve de réussite</li>
-        <li>Que le code source est question d'expérience, de compétence et de discipline</li>
-      </ul>
-    </div>
-
-    <div *ngIf="lang == 'en'">
-      <p>Our main objective is to help companies develop applications to automate their business processes. Some of our applications
-        are distributed around the world on smart phones and tablets!</p>
-      <p>We believe...</p>
-      <ul>
-        <li>That satisfied users are proof of successful application design</li>
-        <li>Que des utilisateurs satisfaits sont une preuve de réussite</li>
-        <li>That source code is about experience, competence and discipline</li>
-      </ul>
-    </div>
-  </ng-container>
+  <div *ngIf="lang == 'en'">
+    <p>Our main objective is to help companies develop applications to automate their business processes. Some of our applications
+      are distributed around the world on smart phones and tablets!</p>
+    <p>We believe...</p>
+    <ul>
+      <li>That satisfied users are proof of successful application design</li>
+      <li>Que des utilisateurs satisfaits sont une preuve de réussite</li>
+      <li>That source code is about experience, competence and discipline</li>
+    </ul>
+  </div>
 
 </div>
 
@@ -36,8 +32,8 @@
   <div class="col-md-4">
     <h3>Android / Mobile</h3>
 
-    <p *ngIf="lang == 'fr'">Natives Android or Responsive webapps</p>
-    <p *ngIf="lang == 'en'">Applications Android natives ou Responsive HTML</p>
+    <p *ngIf="lang == 'fr'">Applications Android natives ou Responsive HTML</p>
+    <p *ngIf="lang == 'en'">Natives Android or Responsive webapps</p>
     <ul>
       <li>Widget</li>
       <li>Services</li>

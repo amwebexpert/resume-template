@@ -8,8 +8,6 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
 })
 export class HomeComponent implements OnInit {
 
-  seeMore: boolean;
-
   constructor(
     private translateService: TranslateService) {
   }
@@ -19,10 +17,6 @@ export class HomeComponent implements OnInit {
 
   get lang() {
     return this.translateService.currentLang;
-  }
-
-  onSeeMore() {
-    this.seeMore = true;
   }
 
 }

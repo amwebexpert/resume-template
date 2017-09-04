@@ -19,6 +19,10 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
+  get lang(): string {
+    return this.translateService.currentLang;
+  }
+
   public changeLanguageTo(languageCode: string): void {
     this.translateService.use(languageCode);
   }
