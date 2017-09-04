@@ -32,12 +32,12 @@
 
 </div>
 
-<!-- Example row of columns -->
 <div class="row">
   <div class="col-md-4">
     <h3>Android / Mobile</h3>
 
-    <p>Natives Android or Responsive webapps</p>
+    <p *ngIf="lang == 'fr'">Natives Android or Responsive webapps</p>
+    <p *ngIf="lang == 'en'">Applications Android natives ou Responsive HTML</p>
     <ul>
       <li>Widget</li>
       <li>Services</li>
@@ -46,14 +46,34 @@
     </ul>
 
     <div id="android_apps">
-      <a href="https://play.google.com/store/apps/developer?id=A.M.+Web+Expert+Inc."><img class="center-block" src="img/droid.png" /></a>
+      <a href="https://play.google.com/store/apps/developer?id=A.M.+Web+Expert+Inc."><img class="center-block" src="/assets/img/droid.png" /></a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div>
+      <a href="http://www.springsource.org/spring-framework"><img class="center-block" src="/assets/img/spring.png" /></a>
+    </div>
+
+    <h3 *ngIf="lang == 'fr'">Sites web complets</h3>
+    <h3 *ngIf="lang == 'en'">Full web sites</h3>
+
+    <ul>
+      <li>Angular (Single page apps)</li>
+      <li>PHP</li>
+      <li>MySQL</li>
+      <li>Apache Web Server</li>
+    </ul>
+
+    <div>
+      <a href="http://www.wampserver.com/en/"><img class="center-block" src="/assets/img/wamp.png" /></a>
     </div>
   </div>
 
   <div class="col-md-4">
     <h3>Web / Intranet</h3>
+
     <ul>
-      <li>Angular (Single page apps)</li>
       <li>RxJs</li>
       <li>Java EE, Spring MVC</li>
       <li>Hibernate/Spring</li>
@@ -62,22 +82,8 @@
     </ul>
 
     <div>
-      <a href="http://www.springsource.org/spring-framework"><img class="center-block" src="img/spring.png" /></a>
-    </div>
-    <div>
-      <a href="https://angular.io/"><img class="center-block" src="img/AngularJS.png" /></a>
+      <a href="https://angular.io/"><img class="center-block" src="/assets/img/AngularJS.png" /></a>
     </div>
   </div>
 
-  <div class="col-md-4">
-    <h3>Sites</h3>
-    <ul>
-      <li>PHP</li>
-      <li>MySQL</li>
-      <li>Apache Web Server</li>
-    </ul>
-    <div>
-      <a href="http://www.wampserver.com/en/"><img class="center-block" src="img/wamp.png" /></a>
-    </div>
-  </div>
 </div>
