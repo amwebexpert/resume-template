@@ -1,3 +1,107 @@
-<p>
-  technologies works!
-</p>
+<div class="alert alert-success" role="alert">
+
+  <h3>{{ 'menu.technologies' | translate }}</h3>
+
+  <div *ngIf="lang == 'fr'">
+    <p>Les technologies évoluent sans cesse et l'expérience est la somme de l'accumulation des connaissances d'une équipe d'experts.
+      <br> Sans être exhaustif, les technologies suivantes font partie intégrante des compétences acquises au fil des années
+      par André.
+    </p>
+  </div>
+
+  <div *ngIf="lang == 'en'">
+    <p>Technologies are constantly evolving and experience is the sum of the accumulated knowledge of a team of experts.
+      <br> Without being exhaustive, the following technologies are an integral part of the skills acquired over the years
+      by André.
+    </p>
+  </div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Langages de programmation</h3>
+    <h3 *ngIf="lang == 'en'">Programming languages</h3>
+    <ul>
+      <li>JAVA / JEE / Android</li>
+      <li>Typescript, JavaScript, Lisp, Groovy</li>
+      <li>Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)</li>
+      <li>Perl, UNIX Shell Scripts (sh, ksh)</li>
+      <li>C# .NET (intermédiaire)</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Outils de développement</h3>
+    <h3 *ngIf="lang == 'en'">Development tools</h3>
+    <ul>
+      <li>VSCode, Eclipse, BEA Workshop, WebSphere RAD</li>
+      <li>Maven, Jenkins, Sonar, Artifactory, jUnit</li>
+      <li>Git, SVN (Subversion), Mercurial, IBM RTC</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Serveurs applicatifs</h3>
+    <h3 *ngIf="lang == 'en'">Webapp servers</h3>
+    <ul>
+      <li>WebLogic, WebSphere, iPlanet, Sun One</li>
+      <li>Open Source: JBoss, Tomcat, Jetty</li>
+      <li>WAMP: PHP, MySQL, Apache</li>
+    </ul>
+  </div>
+</div>
+<!-- row -->
+
+<div class="row">
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Systèmes d'exploitation</h3>
+    <h3 *ngIf="lang == 'en'">Operating systems</h3>
+    <ul>
+      <li>UNIX Solaris</li>
+      <li>Linux, CentOS</li>
+      <li>Windows 7, 10</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Bases de données</h3>
+    <h3 *ngIf="lang == 'en'">Databases (DBMS)</h3>
+    <ul>
+      <li>Oracle</li>
+      <li>PosgreSQL</li>
+      <li>Sybase</li>
+      <li>DB2</li>
+      <li>SQLite</li>
+      <li>Microsoft SQL Server</li>
+      <li>MySQL</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Outils / Frameworks</h3>
+    <h3 *ngIf="lang == 'en'">Tools & frameworks</h3>
+    <ul>
+      <li>Postman, SoapUI, Selenium</li>
+      <li>PgAdmin, SQuirreL SQL, AquaData Studio, TOAD, MySQL</li>
+      <li>Spring MVC, Spring WS, Spring Security</li>
+      <li>Angular 4.x</li>
+    </ul>
+  </div>
+</div>
+<!-- row -->
+
+<div class="row">
+  <div class="col-md-4 offset-md-4">
+    <h3 *ngIf="lang == 'fr'">Diverses technologies</h3>
+    <h3 *ngIf="lang == 'en'">Other technologies</h3>
+    <ul>
+      <li>Google Cloud, GAE Datastore, Objectify, Google Script</li>
+      <li>AngularJS, jQuery Mobile, PhoneGap</li>
+      <li>Twitter Bootstrap, Ajax, Json, HTML5/CSS3, jQuery</li>
+      <li>SOA Web Services, JAX-WS, Apache CXF, SOAP, Axis, Spring WS</li>
+      <li>Apache Camel, JPA2, Hibernate, Spring, JDBC</li>
+      <li>EJB, Tiles, Spring MVC</li>
+      <li>Servlet API, Spring JDBC, JSP, JMS</li>
+      <li>XML, X-Path, FOP, JasperReport, iText, Schemas, XSLT</li>
+      <li>jChart API, Apache POI, BeanShell API</li>
+    </ul>
+  </div>
+</div>
+<!-- row -->
