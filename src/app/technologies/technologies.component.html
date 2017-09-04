@@ -88,7 +88,10 @@
 <!-- row -->
 
 <div class="row">
-  <div class="col-md-4 offset-md-4">
+  <div class="col-md-4">
+    <!-- I know but offset-md-4 is not working on Bootstrap 4 beta-->
+  </div>
+  <div class="col-md-4">
     <h3 *ngIf="lang == 'fr'">Diverses technologies</h3>
     <h3 *ngIf="lang == 'en'">Other technologies</h3>
     <ul>
