@@ -9,6 +9,7 @@ import {
   TranslateStaticLoader,
 } from 'ng2-translate/ng2-translate';
 
+import { ResolutionService } from './fwk/service/resolution.service';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
@@ -39,6 +40,7 @@ export function createTranslateLoader(pHttp: Http) {
   ],
   providers: [
     Title,
+    ResolutionService,
     {
       provide: MissingTranslationHandler,
       useClass: AppMissingTranslationHandler

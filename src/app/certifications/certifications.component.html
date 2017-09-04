@@ -32,28 +32,22 @@
 </div>
 
 <div class="row">
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 text-center" [ngClass]="{'small-devices-spacing': !atLeastMediumDevice()}">
     <a href="http://www.whizlabs.com/scjp/scjp.html"><img src="/assets/img/SCJP.gif" /></a>
   </div>
 
-  <div class="hidden-md-up"><br></div>
-
-  <div class="col-md-4 text-center">
-    <a href="http://www-01.ibm.com/software/lotus/training/portalofferings.html"><img src="/assets/img/WebSpherePortalDev.gif" /></a>
+  <div class="col-md-4 text-center" [ngClass]="{'small-devices-spacing': !atLeastMediumDevice()}">
+      <a href="http://www-01.ibm.com/software/lotus/training/portalofferings.html"><img src="/assets/img/WebSpherePortalDev.gif" /></a>
   </div>
 
-  <div class="hidden-md-up"><br></div>
-
-  <div class="col-md-4 text-center">
+  <div class="col-md-4 text-center" [ngClass]="{'small-devices-spacing': !atLeastMediumDevice()}">
     <a href="http://www.whizlabs.com/scwcd/scwcd.html"><img src="/assets/img/SCWCD.gif" /></a>
   </div>
-
-  <div class="hidden-md-up"><br></div>
 
 </div>
 
 <div class="row">
-  <div class="col-md-12 text-center">
+  <div class="col-md-4 text-center" [ngClass]="{'small-devices-spacing': !atLeastMediumDevice()}">
     <a href="https://www.whizlabs.com/oracle-java-certifications/"><img src="/assets/img/jwhiz.png" /></a>
   </div>
 </div>

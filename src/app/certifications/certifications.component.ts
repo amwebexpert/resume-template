@@ -1,3 +1,4 @@
+import { ResolutionService } from '../fwk/service/resolution.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificationsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private resolutionService: ResolutionService) { }
 
   ngOnInit() {
+  }
+
+  atLeastMediumDevice(): boolean {
+    return this.resolutionService.hasAtLeast('md');
   }
 
 }
