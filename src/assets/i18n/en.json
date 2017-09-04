@@ -1,6 +1,6 @@
 {
     "welcome.title": "Welcome!",
-    "welcome.text": "Welcome to the currency mask for Angular 2 using Numeral.js. This is a simple component which handle money format from user input. The components demonstrates the target format as user type and also react to locale change events.",
+    "welcome.text": "Founded in 2005, A.M. Web Expert Inc. specializes in dynamic web site architecture, design and programming...",
 
     "menu.home": "Home",
     "menu.more": "More",
@@ -9,12 +9,9 @@
     "menu.language.english": "English",
     "menu.language.french": "Français",
 
-    "amount.input": "User input:",
-    "amount.form": "Form object:",
-    "amount.formatted": "Formatted amount:",
-    "amount.placeholder": "type amount",
+    "welcome.see.more": "See more...",
 
-    "about.title.description": "About this application...",
+    "about.title.description": "À propos de cette application...",
     "about.title.version": "Version",
     "about.title.copyright": "Copyrights",
     "about.title.opensource": "Open source",

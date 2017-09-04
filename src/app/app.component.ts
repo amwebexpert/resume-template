@@ -1,4 +1,6 @@
+import { AppConstants } from './app.constants';
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
 @Component({
@@ -8,11 +10,14 @@ import { TranslateService } from 'ng2-translate/ng2-translate';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private translateService: TranslateService) {
+  constructor(
+    private translateService: TranslateService,
+    private titleService: Title) {
   }
 
   ngOnInit(): void {
     console.log('AppComponent ngOnInit');
+    this.titleService.setTitle(AppConstants.APP_TITLE_VERSION);
     this.initLanguageService();
   }
 
