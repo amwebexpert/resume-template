@@ -5,15 +5,21 @@
     "menu.home": "Home",
     "menu.more": "More",
     "menu.about": "About",
+    "menu.certifications": "Certifications",
+    "menu.technologies": "Technologies",
+    "menu.members": "Members",
+    "menu.achievements": "Achievements",
+    "menu.contacts": "Contact",
     "menu.language": "Language",
     "menu.language.english": "English",
     "menu.language.french": "Français",
 
     "welcome.see.more": "See more...",
 
-    "about.title.description": "À propos de cette application...",
+    "about.title.description": "About this application...",
     "about.title.version": "Version",
     "about.title.copyright": "Copyrights",
+    "about.copyright": "None",
     "about.title.opensource": "Open source",
     "about.opensource.notice": "This software uses open source libraries distibuted under the following licences:",
 
