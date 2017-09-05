@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { TranslateService } from 'ng2-translate/ng2-translate';
 
+declare var $: any; // jQuery reference
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -23,8 +25,12 @@ export class MenuComponent implements OnInit {
     return this.translateService.currentLang;
   }
 
-  public changeLanguageTo(languageCode: string): void {
+  changeLanguageTo(languageCode: string): void {
     this.translateService.use(languageCode);
+  }
+
+  navItemClick(event) {
+    $('.navbar-collapse').collapse('hide');
   }
 
 }

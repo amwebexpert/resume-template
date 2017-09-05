@@ -19,11 +19,11 @@
   <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
 
     <ul class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="/certifications">
+      <a class="nav-item nav-link" routerLink="/certifs">
         {{ 'menu.certifications' | translate }}
       </a>
 
-      <a class="nav-item nav-link" routerLink="/technologies">
+      <a class="nav-item nav-link" routerLink="/technologies" (click)="navItemClick($event)">
         {{ 'menu.technologies' | translate }}
       </a>
 

@@ -16,7 +16,7 @@ import { AppComponent } from './app.component';
 import { AppMissingTranslationHandler } from './fwk/i18n/i18n.module';
 import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
-import { CertificationsComponent } from './certifications/certifications.component';
+import { CertifsComponent } from './certifs/certifs.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { MembersComponent } from './members/members.component';
 import { AchievementsComponent } from './achievements/achievements.component';
@@ -51,7 +51,7 @@ export function createTranslateLoader(pHttp: Http) {
     AboutComponent,
     MenuComponent,
     HomeComponent,
-    CertificationsComponent,
+    CertifsComponent,
     TechnologiesComponent,
     MembersComponent,
     AchievementsComponent,
