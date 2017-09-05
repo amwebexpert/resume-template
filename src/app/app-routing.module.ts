@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-import { CertificationsComponent } from './certifications/certifications.component';
+import { CertifsComponent } from './certifs/certifs.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 
@@ -20,8 +20,8 @@ const routes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'certifications',
-    component: CertificationsComponent,
+    path: 'certifs',
+    component: CertifsComponent,
   },
   {
     path: 'technologies',
@@ -53,7 +53,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, { useHash: true })
   ],
   exports: [
     RouterModule
