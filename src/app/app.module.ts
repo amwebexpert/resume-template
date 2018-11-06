@@ -1,13 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Http } from '@angular/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {
-  MissingTranslationHandler,
-  TranslateLoader,
-  TranslateModule,
-  TranslateStaticLoader,
-} from 'ng2-translate/ng2-translate';
+import { MissingTranslationHandler, TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { ResolutionService } from './fwk/service/resolution.service';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,19 +18,24 @@ import { MembersComponent } from './members/members.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ContactsComponent } from './contacts/contacts.component';
 
-export function createTranslateLoader(pHttp: Http) {
-  return new TranslateStaticLoader(pHttp, 'assets/i18n', '.json');
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
 }
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     TranslateModule.forRoot({
-      provide: TranslateLoader,
-      useFactory: (createTranslateLoader),
-      deps: [Http]
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
     }),
     AppRoutingModule,
   ],

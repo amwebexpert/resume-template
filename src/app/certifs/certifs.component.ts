@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResolutionService } from '../fwk/service/resolution.service';
-import { TranslateService } from 'ng2-translate/ng2-translate';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-certifs',

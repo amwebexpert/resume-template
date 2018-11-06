@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   title = AppConstants.APP_TITLE_VERSION;
+  ngVersion = AppConstants.ANGULAR_VERSION;
+  bootstrapVersion = AppConstants.BOOTSTRAP_VERSION;
 
   constructor() { }
 
