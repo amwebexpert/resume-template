@@ -7,7 +7,7 @@ declare var $: any; // jQuery reference
  */
 export class AppConstants {
 
-  public static DATE = '2018-11-06';
+  public static DATE = '2019-03-23';
   public static APP_TITLE = 'AM';
   public static APP_TITLE_VERSION: string = AppConstants.APP_TITLE + ' - ' + AppConstants.DATE;
 
