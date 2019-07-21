@@ -35,6 +35,10 @@
         {{ 'menu.achievements' | translate }}
       </a>
 
+      <a class="nav-item nav-link" (click)="navItemClick($event)" routerLink="/demos">
+        POC
+      </a>
+
       <li class="nav-item dropdown">
         <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{ 'menu.about' | translate }}

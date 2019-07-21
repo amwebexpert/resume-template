@@ -1,0 +1,35 @@
+<div class="alert alert-success" role="alert">
+
+    <h2>Demo & POC</h2>
+
+    <div *ngIf="lang == 'fr'">
+        <p>Divers démos et preuves de concept</p>
+    </div>
+
+    <div *ngIf="lang == 'en'">
+        <p>Demos and proof of concept</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <ul>
+            <li><a href="https://www.npmjs.com/package/ngx-spinner">NgxSpinner</a></li>
+            <li>
+                <button type="button" class="btn btn-success" (click)="startSpinnerGlobal()">
+                    Spinner -> {{'generic.start' | translate}}
+                </button>
+            </li>
+        </ul>
+
+    </div>
+    <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere,
+            magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.</p>
+        <ngx-spinner name="demo-spinner" [fullScreen]="false" bdColor="rgba(20,20,20,0.3)" size="medium" color="#168A4D"
+            type="ball-clip-rotate">
+            <p *ngIf="lang == 'fr'" class="loading">Chargement...</p>
+            <p *ngIf="lang == 'en'" class="loading">Loading...</p>
+        </ngx-spinner>
+    </div>
+</div>

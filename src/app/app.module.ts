@@ -17,6 +17,8 @@ import { TechnologiesComponent } from './technologies/technologies.component';
 import { MembersComponent } from './members/members.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { DemosComponent } from './demos/demos.component';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -38,6 +40,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       }
     }),
     AppRoutingModule,
+    NgxSpinnerModule,
   ],
   providers: [
     Title,
@@ -57,6 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MembersComponent,
     AchievementsComponent,
     ContactsComponent,
+    DemosComponent,
   ],
   bootstrap: [AppComponent]
 })

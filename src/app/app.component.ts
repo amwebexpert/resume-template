@@ -33,4 +33,8 @@ export class AppComponent implements OnInit {
     this.translateService.use(this.translateService.getDefaultLang());
   }
 
+  get lang() {
+    return this.translateService.currentLang;
+  }
+
 }

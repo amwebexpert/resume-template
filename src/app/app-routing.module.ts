@@ -1,14 +1,14 @@
-import { ContactsComponent } from './contacts/contacts.component';
-import { AchievementsComponent } from './achievements/achievements.component';
-import { TechnologiesComponent } from './technologies/technologies.component';
-import { MembersComponent } from './members/members.component';
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-
-import { CertifsComponent } from './certifs/certifs.component';
 import { AboutComponent } from './about/about.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { CertifsComponent } from './certifs/certifs.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { DemosComponent } from './demos/demos.component';
 import { HomeComponent } from './home/home.component';
+import { MembersComponent } from './members/members.component';
+import { TechnologiesComponent } from './technologies/technologies.component';
+
 
 const routes: Routes = [
   {
@@ -38,6 +38,10 @@ const routes: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent,
+  },
+  {
+    path: 'demos',
+    component: DemosComponent,
   },
   {
     path: '',
