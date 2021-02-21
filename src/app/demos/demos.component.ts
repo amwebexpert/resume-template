@@ -10,9 +10,9 @@ import { GithubUserProjectsService } from '../services/github-user-projects.serv
   styleUrls: ['./demos.component.css']
 })
 export class DemosComponent implements OnInit {
+  public isSearching = false;
   public username = 'amwebexpert';
   public projects: GithubUserProject[];
-  public error: any;
 
   constructor(
     private translateService: TranslateService,
@@ -24,19 +24,25 @@ export class DemosComponent implements OnInit {
     this.refreshProjects();
   }
 
-  private refreshProjects() {
+  refreshProjects() {
+    this.isSearching = true;
     this.spinner.show('demo-spinner', {fullScreen: false})
 
     this.githubUserProjectsService.listUserProjects(this.username)
       .subscribe(
         (data) => this.projects = data,
-        (e) => this.error = e,
-        () => this.spinner.hide('demo-spinner')
+        (e) => {
+          console.error(e);
+          this.projects = [];
+          this.spinner.hide('demo-spinner');
+          this.isSearching = false;
+        },
+        () => {
+          this.spinner.hide('demo-spinner');
+          this.isSearching = false;
+          console.log('END');
+        }
       );
-  }
-
-  ngModelChange() {
-    this.refreshProjects();
   }
 
   get lang() {
