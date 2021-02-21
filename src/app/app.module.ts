@@ -19,6 +19,8 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { DemosComponent } from './demos/demos.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { GithubUserProjectsService } from './services/github-user-projects.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -31,6 +33,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -49,6 +52,7 @@ export function HttpLoaderFactory(http: HttpClient) {
       provide: MissingTranslationHandler,
       useClass: AppMissingTranslationHandler
     },
+    GithubUserProjectsService,
   ],
   declarations: [
     AppComponent,
