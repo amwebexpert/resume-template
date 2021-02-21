@@ -23,7 +23,7 @@
     <h3 *ngIf="lang == 'fr'">Langages de programmation</h3>
     <h3 *ngIf="lang == 'en'">Programming languages</h3>
     <ul>
-      <li>Kotlin / JAVA / JEE / Android</li>
+      <li>Kotlin / JAVA / Groovy / JEE / Android</li>
       <li>Typescript, JavaScript, Lisp, Groovy</li>
       <li>Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)</li>
       <li>Perl, UNIX Shell Scripts (sh, ksh)</li>
@@ -33,18 +33,18 @@
     <h3 *ngIf="lang == 'fr'">Outils de développement</h3>
     <h3 *ngIf="lang == 'en'">Development tools</h3>
     <ul>
-      <li>VSCode, IntelliJ IDE, Eclipse, BEA Workshop, WebSphere RAD</li>
-      <li>Maven, Jenkins, Sonar, Artifactory, jUnit 5</li>
-      <li>Git, Github, Bitbucket, Mercurial, IBM RTC</li>
+      <li>VSCode, IntelliJ IDE, Eclipse, Android Studio</li>
+      <li>Gradle, Maven, Jenkins, Sonar, Artifactory, jUnit 5, Spock Framework</li>
+      <li>Node.js, Git, Github, Bitbucket, Mercurial</li>
     </ul>
   </div>
   <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Serveurs applicatifs</h3>
-    <h3 *ngIf="lang == 'en'">Webapp servers</h3>
+    <h3 *ngIf="lang == 'fr'">Outils / Frameworks</h3>
+    <h3 *ngIf="lang == 'en'">Tools & frameworks</h3>
     <ul>
-      <li>WebLogic, WebSphere, iPlanet, Sun One</li>
-      <li>Open Source: JBoss, Tomcat, Jetty, NanoHTTPD</li>
-      <li>WAMP: PHP, MySQL, Apache</li>
+      <li>Spring Framework - Boot, Data, JPA, Hibernate, Security, REST</li>
+      <li>Swagger, Postman, SoapUI, Cypress, Cucumber, Gherkin</li>
+      <li>PgAdmin, SQuirreL SQL, AquaData Studio, TOAD, DataGrip, Flyway</li>
     </ul>
   </div>
 </div>
@@ -52,11 +52,20 @@
 
 <div class="row">
   <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Serveurs applicatifs</h3>
+    <h3 *ngIf="lang == 'en'">Webapp servers</h3>
+    <ul>
+      <li>JBoss, Tomcat, Jetty, NanoHTTPD</li>
+      <li>WebLogic, WebSphere, iPlanet, Sun One</li>
+      <li>WAMP: PHP, MySQL, Apache</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
     <h3 *ngIf="lang == 'fr'">Systèmes d'exploitation</h3>
     <h3 *ngIf="lang == 'en'">Operating systems</h3>
     <ul>
-      <li>UNIX Solaris</li>
-      <li>Linux, CentOS</li>
+      <li>MacOS</li>
+      <li>Linux: CentOS, Ubuntu</li>
       <li>Windows 7, 10</li>
     </ul>
   </div>
@@ -64,18 +73,10 @@
     <h3 *ngIf="lang == 'fr'">Interfaces utilisateur (UI)</h3>
     <h3 *ngIf="lang == 'en'">User interface (UI)</h3>
     <ul>
-      <li>HTML5, CSS3, SCSS, Twitter Bootstrap 4.x</li>
+      <li>HTML5/CSS3, Bootstrap, Material-UI</li>
       <li>Angular 8.x, @ngrx/store, Jasmine, Karma</li>
-      <li>React 16.x, Redux, typescript-ioc, Jest</li>
-    </ul>
-  </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Outils / Frameworks</h3>
-    <h3 *ngIf="lang == 'en'">Tools & frameworks</h3>
-    <ul>
-      <li>Swagger, Postman, SoapUI, Selenium</li>
-      <li>PgAdmin, SQuirreL SQL, AquaData Studio, TOAD, MySQL</li>
-      <li>Spring - Boot, Data, REST, JPA, Security</li>
+      <li>React 16.x, Redux, typescript-ioc</li>
+      <li>Cypress, React Testing Library, Jest</li>
     </ul>
   </div>
 </div>
@@ -90,25 +91,32 @@
       <li>PosgreSQL</li>
       <li>Sybase</li>
       <li>DB2</li>
-      <li>SQLite</li>
+      <li>MySQL</li>
       <li>Microsoft SQL Server</li>
-      <li>MySQL, H2, HSQLDB</li>
+      <li>SQLite, H2, HSQLDB</li>
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <h3 *ngIf="lang == 'fr'">Cloud et CI/CD</h3>
+    <h3 *ngIf="lang == 'en'">Cloud and CI/CD</h3>
+    <ul>
+      <li>AWS - DynamoDB, S3</li>
+      <li>Docker, Docker Desktop, Docker Compose, NGINX (reverse proxy)</li>
+      <li>PCF (Pivotal Cloud Foundry), Concourse</li>
+      <li>Google Cloud, GAE Datastore, Objectify, Google Spreadsheet API</li>
+      <li>GitHub Actions, Jenkins</li>
     </ul>
   </div>
   <div class="col-md-4">
     <h3 *ngIf="lang == 'fr'">Diverses technologies</h3>
     <h3 *ngIf="lang == 'en'">Other technologies</h3>
     <ul>
-      <li>PCF (Pivotal Cloud Foundry), Concourse</li>
-      <li>Google Cloud, GAE Datastore, Objectify, Google Spreadsheet API</li>
-      <li>Angular 8.x, React 16.x, Redux, jQuery Mobile, PhoneGap</li>
-      <li>Twitter Bootstrap 4.x, Ajax, Json, HTML5/CSS3, jQuery</li>
-      <li>SOA Web Services, JAX-RS, Apache CXF, SOAP, Axis, Spring WS</li>
-      <li>OAuth2, Hateoas, Apache Camel, JPA2, Hibernate, Spring, JDBC</li>
-      <li>EJB, Tiles, Spring MVC, Spring Rest, Spring Boot</li>
+      <li>OAuth2, Hateoas, Apache Kafka</li>
+      <li>Twitter Bootstrap, Material-UI, Ajax</li>
       <li>Servlet API, Spring JDBC, JSP, JMS</li>
       <li>XML, X-Path, FOP, JasperReport, iText & OpenPDF, Schemas, XSLT</li>
-      <li>jChart API, Apache POI, BeanShell API, RxJS</li>
+      <li>Apache Lucene, jChart API, Apache POI, BeanShell API, RxJS</li>
+      <li>Jira, Confluence</li>
     </ul>
   </div>
 </div>
