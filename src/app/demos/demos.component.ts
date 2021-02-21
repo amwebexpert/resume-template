@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { GithubUserProject } from '../services/github-types';
 import { GithubUserProjectsService } from '../services/github-user-projects.service';
 
 @Component({
@@ -9,6 +10,9 @@ import { GithubUserProjectsService } from '../services/github-user-projects.serv
   styleUrls: ['./demos.component.css']
 })
 export class DemosComponent implements OnInit {
+  public username = 'amwebexpert';
+  public projects: GithubUserProject[];
+  public error: any;
 
   constructor(
     private translateService: TranslateService,
@@ -17,11 +21,22 @@ export class DemosComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.startSpinner(false);
-    this.githubUserProjectsService.listUserProjects('amwebexpert')
+    this.refreshProjects();
+  }
+
+  private refreshProjects() {
+    this.spinner.show('demo-spinner', {fullScreen: false})
+
+    this.githubUserProjectsService.listUserProjects(this.username)
       .subscribe(
-        (response) => console.log(response)
+        (data) => this.projects = data,
+        (e) => this.error = e,
+        () => this.spinner.hide('demo-spinner')
       );
+  }
+
+  ngModelChange() {
+    this.refreshProjects();
   }
 
   get lang() {
@@ -31,11 +46,6 @@ export class DemosComponent implements OnInit {
   startSpinnerGlobal() {
     this.spinner.show('global');
     setTimeout(() => this.spinner.hide('global'), 4000);
-  }
-
-  startSpinner(fullScreen: boolean = false) {
-    this.spinner.show('demo-spinner', {fullScreen});
-    setTimeout(() => this.spinner.hide('demo-spinner'), 4000);
   }
 
 }
