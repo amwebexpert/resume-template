@@ -21,6 +21,7 @@ import { DemosComponent } from './demos/demos.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { GithubUserProjectsService } from './services/github-user-projects.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TopHorizontalNavbarComponent } from './top-horizontal-navbar/top-horizontal-navbar.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -65,6 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AchievementsComponent,
     ContactsComponent,
     DemosComponent,
+    TopHorizontalNavbarComponent,
   ],
   bootstrap: [AppComponent]
 })

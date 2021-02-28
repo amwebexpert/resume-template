@@ -10,6 +10,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent implements OnInit {
 
+  appTitleVersion = AppConstants.APP_TITLE_VERSION;
+
   constructor(
     private translateService: TranslateService,
     private titleService: Title) {
@@ -17,7 +19,7 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     console.log('AppComponent ngOnInit');
-    this.titleService.setTitle(AppConstants.APP_TITLE_VERSION);
+    this.titleService.setTitle(this.appTitleVersion);
     this.initLanguageService();
   }
 
