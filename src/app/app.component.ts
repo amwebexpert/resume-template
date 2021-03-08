@@ -35,8 +35,12 @@ export class AppComponent implements OnInit {
     this.translateService.use(this.translateService.getDefaultLang());
   }
 
-  get lang() {
+  get lang(): string {
     return this.translateService.currentLang;
+  }
+
+  changeLanguageTo(languageCode: string): void {
+    this.translateService.use(languageCode);
   }
 
 }
