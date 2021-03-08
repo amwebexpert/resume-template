@@ -10,3 +10,4 @@ Follow instructions here:
 
 Then copy folders of `html&css` folders (css, vendor, img) into `resume-template/src/assets/`
 
+Volt online demo: https://demo.themesberg.com/volt/pages/dashboard/dashboard.html
