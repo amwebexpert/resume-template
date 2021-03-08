@@ -30,10 +30,10 @@
               class="dropdown-menu dashboard-dropdown dropdown-menu dropdown-menu-center mt-2 py-0"
             >
               <a class="dropdown-item rounded-top fw-bold" href="#" (click)="changeLanguageTo('en')"
-                ><span class="fa fa-comment"></span>English</a
+                ><span class="fa fa-comment"></span>English <span *ngIf="lang == 'en'" class="fa fa-check"></span></a
               >
               <a class="dropdown-item rounded-bottom fw-bold" href="#" (click)="changeLanguageTo('fr')"
-                ><span class="fa fa-comment"></span>Francais</a
+                ><span class="fa fa-comment"></span>Francais <span *ngIf="lang == 'fr'" class="fa fa-check"></span></a
               >
             </div>
           </li>
