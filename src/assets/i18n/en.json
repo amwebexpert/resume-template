@@ -27,6 +27,7 @@
     "generic.network.error": "Network error. Please verify the server address and internet connection and try again.",
     "generic.start": "Start",
     "generic.stop": "Stop",
+    "generic.search" : "Search",
     "generic.refresh" : "Refresh",
     "generic.ok" : "OK",
     "generic.delete" : "Delete",
@@ -50,6 +51,7 @@
     "validation.required": "You must provide a value for this field",
     "validation.pattern": "Invalid value for this field",
     "validation.range": "Field value out of bounds",
-    "validation.range.explicit": "Value must be within {{min}} and {{max}} range"
+    "validation.range.explicit": "Value must be within {{min}} and {{max}} range",
 
+    "poc.usernameGithub": "Nom d'utilisateur Github"
 }

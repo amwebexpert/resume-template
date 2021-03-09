@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { Observable } from 'rxjs';
 import { GithubUserProject } from '../services/github-types';
 import { GithubUserProjectsService } from '../services/github-user-projects.service';
 

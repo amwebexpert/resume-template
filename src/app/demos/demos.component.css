@@ -5,3 +5,8 @@
 .search-results {
   margin-top: 20px;
 }
+
+.link-to-project {
+  color: #262B40;
+  text-decoration: underline;
+}

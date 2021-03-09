@@ -10,7 +10,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 import { AppMissingTranslationHandler } from './fwk/i18n/i18n.module';
-import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { CertifsComponent } from './certifs/certifs.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
@@ -58,7 +57,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     AboutComponent,
-    MenuComponent,
     HomeComponent,
     CertifsComponent,
     TechnologiesComponent,

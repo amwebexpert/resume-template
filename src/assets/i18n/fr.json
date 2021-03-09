@@ -27,6 +27,7 @@
     "generic.network.error": "Une erreur de connection internet est survenue. Vérifiez l'adresse du serveur et votre connection internet et réessayez.",
     "generic.start": "Démarrer",
     "generic.stop": "Arrêter",
+    "generic.search" : "Rechercher",
     "generic.refresh" : "Rafraîchir",
     "generic.ok" : "OK",
     "generic.delete" : "Supprimer",
@@ -49,6 +50,8 @@
     "validation.required": "Vous devez saisir une valeur pour ce champ",
     "validation.pattern": "Entrée invalide pour ce champ",
     "validation.range": "Entrée hors limite pour ce champ",
-    "validation.range.explicit": "La valeur doit être entre {{min}} et {{max}}"
+    "validation.range.explicit": "La valeur doit être entre {{min}} et {{max}}",
+
+    "poc.usernameGithub": "Nom d'utilisateur Github"
 
 }
