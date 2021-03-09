@@ -1,123 +1,176 @@
-<div class="alert alert-success" role="alert">
+<div class="row justify-content-md-center">
+  <div class="col-12 col-md-8 col-xl-6 mb-4">
+    <div class="card border-light shadow-sm card-first">
+      <div class="card-body">
+        <h3>{{ "menu.technologies" | translate }}</h3>
 
-  <h3>{{ 'menu.technologies' | translate }}</h3>
+        <div *ngIf="lang == 'fr'">
+          <p>
+            Les technologies évoluent sans cesse et l'expérience est la somme de
+            l'accumulation des connaissances d'une équipe d'experts.
+          </p>
+          <p>
+            Sans être exhaustif, les technologies suivantes font partie
+            intégrante des compétences acquises au fil des années par André.
+          </p>
+        </div>
 
-  <div *ngIf="lang == 'fr'">
-    <p>Les technologies évoluent sans cesse et l'expérience est la somme de l'accumulation des connaissances d'une équipe d'experts.
-      <br> Sans être exhaustif, les technologies suivantes font partie intégrante des compétences acquises au fil des années
-      par André.
-    </p>
+        <div *ngIf="lang == 'en'">
+          <p>
+            Technologies are constantly evolving and experience is the sum of
+            the accumulated knowledge of a team of experts.
+          </p>
+          <p>
+            Without being exhaustive, the following technologies are an integral
+            part of the skills acquired over the years by André.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div *ngIf="lang == 'en'">
-    <p>Technologies are constantly evolving and experience is the sum of the accumulated knowledge of a team of experts.
-      <br> Without being exhaustive, the following technologies are an integral part of the skills acquired over the years
-      by André.
-    </p>
-  </div>
-
 </div>
 
-<div class="row">
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Langages de programmation</h3>
-    <h3 *ngIf="lang == 'en'">Programming languages</h3>
-    <ul>
-      <li>Kotlin / JAVA / Groovy / JEE / Android</li>
-      <li>Typescript, JavaScript, Lisp, Groovy</li>
-      <li>Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)</li>
-      <li>Perl, UNIX Shell Scripts (sh, ksh)</li>
-    </ul>
+<div class="row justify-content-md-center">
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Langages de programmation</h3>
+        <h3 *ngIf="lang == 'en'">Programming languages</h3>
+        <ul>
+          <li>Kotlin / JAVA / Groovy / JEE / Android</li>
+          <li>Typescript, JavaScript, Lisp, Groovy</li>
+          <li>Transact-SQL (SQL Server, Sybase), PL/SQL (Oracle)</li>
+          <li>Perl, UNIX Shell Scripts (sh, ksh)</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Outils de développement</h3>
-    <h3 *ngIf="lang == 'en'">Development tools</h3>
-    <ul>
-      <li>VSCode, IntelliJ IDE, Eclipse, Android Studio</li>
-      <li>Gradle, Maven, Jenkins, Sonar, Artifactory, jUnit 5, Spock Framework</li>
-      <li>Node.js, Git, Github, Bitbucket, Mercurial</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Outils de développement</h3>
+        <h3 *ngIf="lang == 'en'">Development tools</h3>
+        <ul>
+          <li>VSCode, IntelliJ IDE, Eclipse, Android Studio</li>
+          <li>
+            Gradle, Maven, Jenkins, Sonar, Artifactory, jUnit 5, Spock Framework
+          </li>
+          <li>Node.js, Git, Github, Bitbucket, Mercurial</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Outils / Frameworks</h3>
-    <h3 *ngIf="lang == 'en'">Tools & frameworks</h3>
-    <ul>
-      <li>Spring Framework - Boot, Data, JPA, Hibernate, Security, REST</li>
-      <li>Swagger, Postman, SoapUI, Cypress, Cucumber, Gherkin</li>
-      <li>PgAdmin, SQuirreL SQL, AquaData Studio, TOAD, DataGrip, Flyway</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Outils / Frameworks</h3>
+        <h3 *ngIf="lang == 'en'">Tools & frameworks</h3>
+        <ul>
+          <li>Spring Framework - Boot, Data, JPA, Hibernate, Security, REST</li>
+          <li>Swagger, Postman, SoapUI, Cypress, Cucumber, Gherkin</li>
+          <li>
+            PgAdmin, SQuirreL SQL, AquaData Studio, TOAD, DataGrip, Flyway
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<!-- row -->
 
-<div class="row">
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Serveurs applicatifs</h3>
-    <h3 *ngIf="lang == 'en'">Webapp servers</h3>
-    <ul>
-      <li>JBoss, Tomcat, Jetty, NanoHTTPD</li>
-      <li>WebLogic, WebSphere, iPlanet, Sun One</li>
-      <li>WAMP: PHP, MySQL, Apache</li>
-    </ul>
+<div class="row justify-content-md-center">
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Serveurs applicatifs</h3>
+        <h3 *ngIf="lang == 'en'">Webapp servers</h3>
+        <ul>
+          <li>JBoss, Tomcat, Jetty, NanoHTTPD</li>
+          <li>WebLogic, WebSphere, iPlanet, Sun One</li>
+          <li>WAMP: PHP, MySQL, Apache</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Systèmes d'exploitation</h3>
-    <h3 *ngIf="lang == 'en'">Operating systems</h3>
-    <ul>
-      <li>MacOS</li>
-      <li>Linux: CentOS, Ubuntu</li>
-      <li>Windows 7, 10</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Systèmes d'exploitation</h3>
+        <h3 *ngIf="lang == 'en'">Operating systems</h3>
+        <ul>
+          <li>MacOS</li>
+          <li>Linux: CentOS, Ubuntu</li>
+          <li>Windows 7, 10</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Interfaces utilisateur (UI)</h3>
-    <h3 *ngIf="lang == 'en'">User interface (UI)</h3>
-    <ul>
-      <li>HTML5/CSS3, Bootstrap, Material-UI</li>
-      <li>Angular 8.x, @ngrx/store, Jasmine, Karma</li>
-      <li>React 16.x, Redux, typescript-ioc</li>
-      <li>Cypress, React Testing Library, Jest</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Interfaces utilisateur (UI)</h3>
+        <h3 *ngIf="lang == 'en'">User interface (UI)</h3>
+        <ul>
+          <li>HTML5/CSS3, Bootstrap, Material-UI</li>
+          <li>Angular 8.x, @ngrx/store, Jasmine, Karma</li>
+          <li>React 16.x, Redux, typescript-ioc</li>
+          <li>Cypress, React Testing Library, Jest</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<!-- row -->
 
-<div class="row">
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Bases de données</h3>
-    <h3 *ngIf="lang == 'en'">Databases (DBMS)</h3>
-    <ul>
-      <li>Oracle</li>
-      <li>PosgreSQL</li>
-      <li>Sybase</li>
-      <li>DB2</li>
-      <li>MySQL</li>
-      <li>Microsoft SQL Server</li>
-      <li>SQLite, H2, HSQLDB</li>
-    </ul>
+<div class="row justify-content-md-center">
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Bases de données</h3>
+        <h3 *ngIf="lang == 'en'">Databases (DBMS)</h3>
+        <ul>
+          <li>Oracle</li>
+          <li>PosgreSQL</li>
+          <li>Sybase</li>
+          <li>DB2</li>
+          <li>MySQL</li>
+          <li>Microsoft SQL Server</li>
+          <li>SQLite, H2, HSQLDB</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Cloud et CI/CD</h3>
-    <h3 *ngIf="lang == 'en'">Cloud and CI/CD</h3>
-    <ul>
-      <li>AWS - DynamoDB, S3</li>
-      <li>Docker, Docker Desktop, Docker Compose, NGINX (reverse proxy)</li>
-      <li>PCF (Pivotal Cloud Foundry), Concourse</li>
-      <li>Google Cloud, GAE Datastore, Objectify, Google Spreadsheet API</li>
-      <li>GitHub Actions, Jenkins</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Cloud et CI/CD</h3>
+        <h3 *ngIf="lang == 'en'">Cloud and CI/CD</h3>
+        <ul>
+          <li>AWS - DynamoDB, S3</li>
+          <li>Docker, Docker Desktop, Docker Compose, NGINX (reverse proxy)</li>
+          <li>PCF (Pivotal Cloud Foundry), Concourse</li>
+          <li>
+            Google Cloud, GAE Datastore, Objectify, Google Spreadsheet API
+          </li>
+          <li>GitHub Actions, Jenkins</li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">
-    <h3 *ngIf="lang == 'fr'">Diverses technologies</h3>
-    <h3 *ngIf="lang == 'en'">Other technologies</h3>
-    <ul>
-      <li>OAuth2, Hateoas, Apache Kafka</li>
-      <li>Twitter Bootstrap, Material-UI, Ajax</li>
-      <li>Servlet API, Spring JDBC, JSP, JMS</li>
-      <li>XML, X-Path, FOP, JasperReport, iText & OpenPDF, Schemas, XSLT</li>
-      <li>Apache Lucene, jChart API, Apache POI, BeanShell API, RxJS</li>
-      <li>Jira, Confluence</li>
-    </ul>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3 *ngIf="lang == 'fr'">Diverses technologies</h3>
+        <h3 *ngIf="lang == 'en'">Other technologies</h3>
+        <ul>
+          <li>OAuth2, Hateoas, Apache Kafka</li>
+          <li>Twitter Bootstrap, Material-UI, Ajax</li>
+          <li>Servlet API, Spring JDBC, JSP, JMS</li>
+          <li>
+            XML, X-Path, FOP, JasperReport, iText & OpenPDF, Schemas, XSLT
+          </li>
+          <li>Apache Lucene, jChart API, Apache POI, BeanShell API, RxJS</li>
+          <li>Jira, Confluence</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<!-- row -->
