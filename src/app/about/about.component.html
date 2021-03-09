@@ -1,48 +1,76 @@
-<div class="panel panel-primary">
-
-    <div class="panel-heading">
-        <h3 class="panel-title">
-            {{ 'about.title.description' | translate }}
-        </h3>
-    </div>
-
-    <div class="panel-body">
+<div class="row justify-content-md-center">
+  <div class="col-12 col-md-8 col-xl-6 mb-4">
+    <div class="card border-light shadow-sm card-first">
+      <div class="card-body">
+        <h3>{{ "about.title.description" | translate }}</h3>
 
         <table class="table">
-            <tbody>
-                <tr>
-                    <td><img src="/assets/img/favicon.ico" class="img-logo"></td>
-                    <td>{{ 'about.title.version' | translate }}</td>
-                    <td><strong>{{ title }}</strong></td>
-                </tr>
-                <tr>
-                    <td><img src="/assets/img/bootstrap-stack.png" class="img-logo"></td>
-                    <td>Twitter Bootstrap</td>
-                    <td><strong>{{bootstrapVersion}}</strong></td>
-                  </tr>
-                <tr>
-                    <td><img src="/assets/img/angular-logo.png" class="img-logo"></td>
-                    <td>Angular</td>
-                    <td><strong>{{ngVersion}}</strong></td>
-                </tr>
-                <tr>
-                    <td> </td>
-                    <td>{{ 'about.title.copyright' | translate }}</td>
-                    <td><strong>{{ 'about.copyright' | translate }}</strong></td>
-                </tr>
-                <tr>
-                    <td><img src="/assets/img/open-source-logo.png" class="img-logo"></td>
-                    <td>{{ 'about.title.opensource' | translate }}</td>
-                    <td style="white-space: normal;">
-                        {{ 'about.opensource.notice' | translate }}
-                        <ul>
-                          <li><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License Version 2.0</a></li>
-                          <li><a href="https://opensource.org/licenses/MIT">MIT Licence</a></li>
-                          <li><a href="http://www.gnu.org/licenses/lgpl-3.0.en.html">GNU Lesser General Public License Version 3</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr>
+              <td><img src="/assets/img/favicon.ico" class="img-logo" /></td>
+              <td>{{ "about.title.version" | translate }}</td>
+              <td>
+                <strong>{{ title }}</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/img/bootstrap-stack.png" class="img-logo" />
+              </td>
+              <td>Twitter Bootstrap</td>
+              <td>
+                <strong>{{ bootstrapVersion }}</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/img/angular-logo.png" class="img-logo" />
+              </td>
+              <td>Angular</td>
+              <td>
+                <strong>{{ ngVersion }}</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="fa fa-copyright fa-2x" aria-hidden="true"></span>
+              </td>
+              <td>{{ "about.title.copyright" | translate }}</td>
+              <td>
+                <a href="http://www.apache.org/licenses/LICENSE-2.0"
+                  >Apache License Version 2.0</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/img/open-source-logo.png" class="img-logo" />
+              </td>
+              <td>{{ "about.title.opensource" | translate }}</td>
+              <td style="white-space: normal">
+                {{ "about.opensource.notice" | translate }}
+                <ul>
+                  <li>
+                    <a href="http://www.apache.org/licenses/LICENSE-2.0"
+                      >Apache License Version 2.0</a
+                    >
+                  </li>
+                  <li>
+                    <a href="https://opensource.org/licenses/MIT"
+                      >MIT Licence</a
+                    >
+                  </li>
+                  <li>
+                    <a href="http://www.gnu.org/licenses/lgpl-3.0.en.html"
+                      >GNU Lesser General Public License Version 3</a
+                    >
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
         </table>
+      </div>
     </div>
+  </div>
 </div>

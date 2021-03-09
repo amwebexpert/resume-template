@@ -1,6 +1,9 @@
 # resume-template
 Angular Resume template for developers
 
+# Licence
+
+This project is licensed under the Apache 2.0 license. For more information see `LICENSE.md`.
 
 ## Setup Volt Free - Bootstrap 5 Dashboard
 
