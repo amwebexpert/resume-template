@@ -8,34 +8,14 @@
           <tbody>
             <tr>
               <td><img src="/assets/img/favicon.ico" class="img-logo" /></td>
-              <td>{{ "about.title.version" | translate }}</td>
               <td>
                 <strong>{{ title }}</strong>
               </td>
             </tr>
             <tr>
               <td>
-                <img src="/assets/img/bootstrap-stack.png" class="img-logo" />
-              </td>
-              <td>Twitter Bootstrap</td>
-              <td>
-                <strong>{{ bootstrapVersion }}</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <img src="/assets/img/angular-logo.png" class="img-logo" />
-              </td>
-              <td>Angular</td>
-              <td>
-                <strong>{{ ngVersion }}</strong>
-              </td>
-            </tr>
-            <tr>
-              <td>
                 <span class="fa fa-copyright fa-2x" aria-hidden="true"></span>
               </td>
-              <td>{{ "about.title.copyright" | translate }}</td>
               <td>
                 <a href="http://www.apache.org/licenses/LICENSE-2.0"
                   >Apache License Version 2.0</a
@@ -44,9 +24,24 @@
             </tr>
             <tr>
               <td>
+                <img src="/assets/img/bootstrap-stack.png" class="img-logo" />
+              </td>
+              <td>
+                Bootstrap <strong>{{ bootstrapVersion }}</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img src="/assets/img/angular-logo.png" class="img-logo" />
+              </td>
+              <td>
+                Angular <strong>{{ ngVersion }}</strong>
+              </td>
+            </tr>
+            <tr>
+              <td>
                 <img src="/assets/img/open-source-logo.png" class="img-logo" />
               </td>
-              <td>{{ "about.title.opensource" | translate }}</td>
               <td style="white-space: normal">
                 {{ "about.opensource.notice" | translate }}
                 <ul>
