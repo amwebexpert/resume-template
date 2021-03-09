@@ -1,90 +1,206 @@
-<div class="alert alert-success" role="alert">
+<div class="row justify-content-md-center">
+  <div class="col-12 col-md-8 col-xl-6 mb-4">
+    <div class="card border-light shadow-sm card-first">
+      <div class="card-body">
+        <h2>{{ "menu.achievements" | translate }}</h2>
 
-  <h2>{{ 'menu.achievements' | translate }}</h2>
+        <div *ngIf="lang == 'fr'">
+          <p>
+            L'expertise de A.M. Web Expert Inc. a permit de livrer plusieurs
+            projets de grande envergure et également de réaliser des
+            applications mobiles distribuées à des centaine de milliers
+            d'utilisateurs.
+          </p>
+        </div>
 
-  <div *ngIf="lang == 'fr'">
-    <p>L'expertise de A.M. Web Expert Inc. a permit de livrer plusieurs projets de grande envergure et également de réaliser
-      des applications mobiles distribuées à des centaine de milliers d'utilisateurs.</p>
+        <div *ngIf="lang == 'en'">
+          <p>
+            The expertise of A.M. Web Expert Inc. has enabled us to deliver
+            several large-scale projects and mobile applications distributed to
+            hundreds of thousands of users.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
 
-  <div *ngIf="lang == 'en'">
-    <p>The expertise of A.M. Web Expert Inc. has enabled us to deliver several large-scale projects and mobile applications
-      distributed to hundreds of thousands of users.</p>
+<div class="row justify-content-md-center">
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <a href="https://accesd.desjardins.com/">Desjardins</a>
+        <ul *ngIf="lang == 'fr'">
+          <li>Acquisition de Fonds et PGLM sur AccesD</li>
+          <li>Envoie électronique sur AccesD & NEI</li>
+          <li>Infrastructures d'entreprise N3</li>
+        </ul>
+        <ul *ngIf="lang == 'en'">
+          <li>AccesD platform Funds & PGLM management</li>
+          <li>AccesD platform electronic documents & NEI</li>
+          <li>N3 enterprise frameworks</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <a href="http://www.cyberpresse.ca/">La presse</a>
+        <ul *ngIf="lang == 'fr'">
+          <li>
+            Module Java pour la communication avec Météo Média pour la
+            récupération des données
+          </li>
+          <li>
+            Module de fusionnement automatisé des mod&#232;les d'affichage des
+            statistiques météos
+          </li>
+        </ul>
+        <ul *ngIf="lang == 'en'">
+          <li>Java FTP module for retrieving Météo Média core data</li>
+          <li>Weather templates for displaying statistics</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <a href="http://www.clubvoyagestourbec.com/cvt/index.php"
+          >Club Voyages</a
+        >
+        <ul *ngIf="lang == 'fr'">
+          <li>Conception et mise en page</li>
+          <li>Module de gestion des spéciaux de voyages en ligne</li>
+          <li>
+            Programmation de phorums, chatting, gestion documentaire
+          </li>
+        </ul>
+        <ul *ngIf="lang == 'en'">
+          <li>Web pages design</li>
+          <li>Special Travel Management Module</li>
+          <li>
+            Online exchanges, dynamic document management
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row justify-content-md-center">
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <a href="http://www.armm.ca">ARMM</a>
+        <ul>
+          <li>Drug research module</li>
+          <li>Membership management screens</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <img
+          src="https://amwebexpert.github.io/etoolbox/favicon.ico"
+          class="android-app-icon"
+        />
+        <a href="https://amwebexpert.github.io/etoolbox/#/">Web Toolbox</a>
+        <ul>
+          <li>
+            Open Source project hosted on
+            <a href="https://github.com/amwebexpert/etoolbox">GitHub</a>
+          </li>
+          <li>
+            A collection of web developer utilities packaged as a desktop app!
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-sm-6 col-xl-4 mb-4">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <span class="fa fa-graduation-cap fa-2 android-app-icon text-info" aria-hidden="true"></span>
+        <a href="https://amwebexpert.github.io/etoolbox/#/">Resume template</a>
+        <ul>
+          <li>
+            Open Source project hosted on
+            <a href="https://github.com/amwebexpert/resume-template">GitHub</a>
+          </li>
+          <li>
+            Angular 11.x with Bootstrap 5 Resume template for developers
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-md-4">
-    <a href="https://accesd.desjardins.com/">Desjardins</a>
-    <ul *ngIf="lang == 'fr'">
-      <li>Acquisition de Fonds sur AccesD</li>
-      <li>NEI Electronic Documents</li>
-      <li>Envoie électronique sur AccesD</li>
-      <li>Acquisition de PGLM sur AccesD</li>
-      <li>Infrastructures applicatives d'entreprise</li>
-    </ul>
-    <ul *ngIf="lang == 'en'">
-      <li>AccesD platform Funds management</li>
-      <li>NEI Electronic Documents</li>
-      <li>AccesD platform electronic documents</li>
-      <li>AccesD platform PGLM management</li>
-      <li>AccesD N3 Frameworks</li>
-    </ul>
-
-    <a href="http://www.cyberpresse.ca/">La presse</a>
-    <ul *ngIf="lang == 'fr'">
-      <li>Module Java pour la communication avec Météo Média pour la récupération des données</li>
-      <li>Module de fusionnement automatisé des mod&#232;les d'affichage des statistiques météos</li>
-    </ul>
-    <ul *ngIf="lang == 'en'">
-      <li>Java FTP module for retrieving Météo Média core data</li>
-      <li>Weather templates for displaying statistics</li>
-    </ul>
-  </div>
+  <div class="col-md-4"></div>
 
   <div class="col-md-3">
     <a href="https://developer.android.com/">Android</a>
     <p>Google Play - Applications</p>
     <ul class="android-app-list">
-      <li><img src="/assets/img/icon-ecell.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.pro">e-Droid-Cell Pro</a></li>
-      <li class="android-app"><img src="/assets/img/icon-wireless-copy-paste.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.btfm">Wireless CopyPaste</a></li>
-      <li class="android-app"><img src="/assets/img/icon-calc.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.calc">Calculator Mem Pro</a></li>
-      <li class="android-app"><img src="/assets/img/icon-alert.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.atracker">Alert Responder</a></li>
-      <li class="android-app"><img src="/assets/img/icon-tipcalc.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.percent.beta">Tip Calculator</a></li>
-      <li class="android-app"><img src="/assets/img/icon-slavedevice.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.amwebexpert.slavedevice.pro">Slave Device</a></li>
-      <li class="android-app"><img src="/assets/img/icon-agiqcollect.png" class="android-app-icon" />
-        <a href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.agiqcollect">AgIQ&reg; Collect</a></li>
+      <li>
+        <img src="/assets/img/icon-ecell.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.pro"
+          >e-Droid-Cell Pro</a
+        >
+      </li>
+      <li class="android-app">
+        <img
+          src="/assets/img/icon-wireless-copy-paste.png"
+          class="android-app-icon"
+        />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.amwebexpert.btfm"
+          >Wireless CopyPaste</a
+        >
+      </li>
+      <li class="android-app">
+        <img src="/assets/img/icon-calc.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.calc"
+          >Calculator Mem Pro</a
+        >
+      </li>
+      <li class="android-app">
+        <img src="/assets/img/icon-alert.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.amwebexpert.atracker"
+          >Alert Responder</a
+        >
+      </li>
+      <li class="android-app">
+        <img src="/assets/img/icon-tipcalc.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.percent.beta"
+          >Tip Calculator</a
+        >
+      </li>
+      <li class="android-app">
+        <img src="/assets/img/icon-slavedevice.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.amwebexpert.slavedevice.pro"
+          >Slave Device</a
+        >
+      </li>
+      <li class="android-app">
+        <img src="/assets/img/icon-agiqcollect.png" class="android-app-icon" />
+        <a
+          href="https://play.google.com/store/apps/details?id=com.j2eeknowledge.viewer.excel.agiqcollect"
+          >AgIQ&reg; Collect</a
+        >
+      </li>
     </ul>
   </div>
 
-  <div class="col-md-5">
-    <img src="https://amwebexpert.github.io/etoolbox/favicon.ico" class="android-app-icon" />
-    <a href="https://amwebexpert.github.io/etoolbox/#/">Web Toolbox</a>
-    <ul>
-      <li>Open Source project hosted on <a href="https://github.com/amwebexpert/etoolbox">GitHub</a></li>
-      <li>A collection of web developer utilities packaged as a desktop app!</li>
-    </ul>
-    <a href="http://www.clubvoyagestourbec.com/cvt/index.php">Club Voyages</a>
-    <ul *ngIf="lang == 'fr'">
-      <li>Conception et mise en page</li>
-      <li>Module de gestion des spéciaux de voyages en ligne</li>
-      <li>Programmation de phorums, chatting, gestion documentaire dynamique</li>
-    </ul>
-    <ul *ngIf="lang == 'en'">
-      <li>Web pages design</li>
-      <li>Special Travel Management Module</li>
-      <li>Discussion spaces, online exchanges, dynamic document management</li>
-    </ul>
-    <a href="http://www.armm.ca">ARMM</a>
-    <ul>
-      <li>Drug research module</li>
-      <li>Membership management screens</li>
-    </ul>
-  </div>
+  <div class="col-md-5"></div>
 </div>
