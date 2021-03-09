@@ -1,20 +1,29 @@
-<div class="alert alert-success" role="alert">
+<div class="row justify-content-md-center">
+  <div class="col-12 col-md-8 col-xl-6 mb-4">
+    <div class="card border-light shadow-sm card-first">
+      <div class="card-body">
+        <h3>{{ 'menu.contacts' | translate }}</h3>
 
-  <h3>{{ 'menu.contacts' | translate }}</h3>
+        <p *ngIf="lang == 'fr'">Vous avez un mandat potentiel requérant l'expertise de A.M. Web Expert Inc. ?</p>
+        <p *ngIf="lang == 'en'">You have a potential mandate requiring our expertise?</p>
 
-  <p *ngIf="lang == 'fr'">Vous avez un mandat potentiel requérant l'expertise de A.M. Web Expert Inc. ?</p>
-  <p *ngIf="lang == 'en'">You have a potential mandate requiring our expertise?</p>
-
-</div>
-
-<div class="row">
-  <div class="col-md-4 text-center">
-    <p><img class="contact-item-icon" src="/assets/img/phone.png" /> <em>514-928-7658</em></p>
-  </div>
-  <div class="col-md-4 text-center">
-    <p><img class="contact-item-icon" src="/assets/img/blog.png" /> <em><a href="https://chroniquedundev.wordpress.com/">https://chroniquedundev.wordpress.com</a></em></p>
-  </div>
-  <div class="col-md-4 text-center">
-    <p><img class="contact-item-icon" src="/assets/img/mail.png" /> <em><a href="mailto:amwebexpert@gmail.com">amwebexpert@gmail.com</a></em></p>
+        <table class="table">
+          <tbody>
+            <tr>
+              <td><span class="fa fa-phone text-success" aria-hidden="true"></span></td>
+              <td><strong><a class="link-to-project" href="tel:514-928-7658">514-928-7658</a></strong></td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-comments text-success" aria-hidden="true"></span></td>
+              <td><strong><a class="link-to-project" href="https://chroniquedundev.wordpress.com/">https://chroniquedundev.wordpress.com</a></strong></td>
+            </tr>
+            <tr>
+              <td><span class="fa fa-envelope text-success" aria-hidden="true"></span></td>
+              <td><strong><a class="link-to-project" href="mailto:amwebexpert@gmail.com">amwebexpert@gmail.com</a></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </div>
