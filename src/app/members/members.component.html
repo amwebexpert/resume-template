@@ -1,69 +1,145 @@
-<div class="alert alert-success" role="alert">
+<div class="row justify-content-md-center">
+  <div class="col-12 col-md-8 col-xl-6 mb-4">
+    <div class="card border-light shadow-sm card-first">
+      <div class="card-body">
+        <h3>{{ "menu.members" | translate }}</h3>
 
-  <h3>{{ 'menu.members' | translate }}</h3>
+        <div *ngIf="lang == 'fr'">
+          <p>
+            Présentement A.M. Web Expert Inc. n'est composé que d'un membre
+            actif, à titre de président.
+          </p>
 
-  <div *ngIf="lang == 'fr'">
-    <p>Présentement A.M. Web Expert Inc. n'est composé que d'un membre actif, à titre de président.</p>
+          <p>
+            Analyste-programmeur possédant 15 années d'expérience en finances,
+            en assurance, dans le domaine de l'enseignement, de du paiement
+            bancaire et pour le gouvernement. Il est expert en technologies
+            Mobile Angular / Web / SOA / REST, expérience qu'il a acquise lors
+            de ses multiples mandats en développement d'application JAVA / JEE
+            et de sites internet (LAMP - Linux-Apache-MySQL-PHP, etc.).
+          </p>
 
-    <p>Analyste-programmeur possédant 15 années d'expérience en finances, en assurance, dans le domaine de l'enseignement, de
-      du paiement bancaire et pour le gouvernement. Il est expert en technologies Mobile Angular / Web / SOA / REST, expérience
-      qu'il a acquise lors de ses multiples mandats en développement d'application JAVA / JEE et de sites internet (LAMP
-      - Linux-Apache-MySQL-PHP, etc.).</p>
+          <p class="text-center">
+            <a
+              href="/assets/resume/Andre_Masson_CV.docx"
+              title="Curiculum Vitae"
+              >Téléchargez le CV mis à jour (English / Fran&#231;ais)</a
+            >
+          </p>
 
-    <p class="text-center">
-      <a href="/assets/resume/Andre_Masson_CV.docx" title="Curiculum Vitae">Téléchargez le CV mis à jour (English / Fran&#231;ais)</a></p>
+          <p class="text-center">
+            <a href="https://cloud.amwebexpert.com/" title="Chroniques d'un dev"
+              >Consultez mon blog de développeur (Fran&#231;ais)</a
+            >
+          </p>
+        </div>
 
-    <p class="text-center">
-      <a href="https://cloud.amwebexpert.com/" title="Chroniques d'un dev">Consultez mon blog de développeur (Fran&#231;ais)</a></p>
+        <div *ngIf="lang == 'en'">
+          <p>
+            Currently A.M. Web Expert Inc. consists of only one active member,
+            as president.
+          </p>
+
+          <p>
+            Analyst-programmer with 15 years of experience in finance,
+            insurance, education, document management and government. He is an
+            expert in Mobile / Web technologies / SOA / REST, experience
+            cumulated through multiple mandates in JAVA / Mobile / JEE
+            application development and websites (WAMP: Windows, Apache, MySQL,
+            PHP).
+          </p>
+
+          <p class="text-center">
+            <a href="/assets/resume/Andre_Masson_CV.docx" title="Resume"
+              >Updated resume (English / Fran&#231;ais)</a
+            >
+          </p>
+
+          <p class="text-center">
+            <a href="https://cloud.amwebexpert.com/" title="Chroniques d'un dev"
+              >View my blog (French only)</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div *ngIf="lang == 'en'">
-    <p>Currently A.M. Web Expert Inc. consists of only one active member, as president.</p>
-
-    <p>Analyst-programmer with 15 years of experience in finance, insurance, education, document management and government.
-      He is an expert in Mobile / Web technologies / SOA / REST, experience cumulated through multiple mandates in JAVA /
-      Mobile / JEE application development and websites (WAMP: Windows, Apache, MySQL, PHP).</p>
-
-    <p class="text-center">
-      <a href="/assets/resume/Andre_Masson_CV.docx" title="Resume">Updated resume (English / Fran&#231;ais)</a></p>
-
-    <p class="text-center">
-      <a href="https://cloud.amwebexpert.com/" title="Chroniques d'un dev">View my blog (French only)</a></p>
-  </div>
-
 </div>
 
-<div class="row" *ngIf="lang == 'fr'">
-  <div class="col-md-6">
-    <ul>
-      <li>Forte aptitude en analyse des besoins fonctionnels et techniques</li>
-      <li>Analyste programmeur expérimenté Mobile / Java EE / PHP / SQL</li>
-      <li>Trés bonne capacité à collaborer et à communiquer avec les utilisateurs, directeurs, experts fonctionnels, investisseurs
-        et autres membres ayant des intér&#234;ts aux projets</li>
-    </ul>
+<div class="row justify-content-md-center" *ngIf="lang == 'fr'">
+  <div class="col-12 col-md-6 mb-6">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <ul>
+          <li>
+            Forte aptitude en analyse des besoins fonctionnels et techniques
+          </li>
+          <li>Analyste programmeur expérimenté Mobile / Java EE / PHP / SQL</li>
+          <li>
+            Trés bonne capacité à collaborer et à communiquer avec les
+            utilisateurs, directeurs, experts fonctionnels, investisseurs et
+            autres membres ayant des intér&#234;ts aux projets
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
-    <ul>
-      <li>Connaissances approfondies des différents p&#244;les du génie logiciel<br> (analyse, planification, configuration logicielle,
-        test, qualit&eacute;, conception, impl&eacute;mentation, maintenance, etc.)</li>
-      <li>Ma&#238;trise du fran&#231;ais et bonne utilisation de l'anglais (parlé, et écrit)</li>
-    </ul>
+  <div class="col-12 col-md-6 mb-6">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <ul>
+          <li>
+            Connaissances approfondies des différents p&#244;les du génie
+            logiciel
+          </li>
+          <li>
+            Analyse, planification, configuration logicielle, test,
+            qualit&eacute;, conception, impl&eacute;mentation, maintenance…
+          </li>
+          <li>
+            Ma&#238;trise du fran&#231;ais et bonne utilisation de l'anglais
+            (parlé, et écrit)
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
-<div class="row" *ngIf="lang == 'en'">
-  <div class="col-md-6">
-    <ul>
-      <li>Strong ability to analyze functional and technical requirements</li>
-      <li>Experienced Software engineer on Mobile / Java EE / PHP / SQL</li>
-      <li>Very good ability to collaborate and communicate with users, managers, functional experts</li>
-    </ul>
+<div class="row justify-content-md-center" *ngIf="lang == 'en'">
+  <div class="col-12 col-md-6 mb-6">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <ul>
+          <li>
+            Strong ability to analyze functional and technical requirements
+          </li>
+          <li>Experienced Software engineer on Mobile / Java EE / PHP / SQL</li>
+          <li>
+            Very good ability to collaborate and communicate with users,
+            managers, functional experts
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
-  <div class="col-md-6">
-    <ul>
-      <li>In-depth knowledge of the different areas of software engineering (analysis, planning, software configuration, testing,
-        quality, design, implementation, maintenance, etc.)</li>
-      <li>Proficiency in French (native language). English: business level (written and spoken).</li>
-    </ul>
+  <div class="col-12 col-md-6 mb-6">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <ul>
+          <li>
+            In-depth knowledge of the different areas of software engineering
+          </li>
+          <li>
+            Analysis, planning, software configuration, testing, quality,
+            design, implementation, maintenance…
+          </li>
+          <li>
+            Proficiency in French (native language). English: business level
+            (written and spoken).
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
