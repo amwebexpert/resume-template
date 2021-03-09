@@ -1,35 +1,40 @@
-<div class="alert alert-success" role="alert">
+<div class="row justify-content-md-center">
+  <div class="col-6">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h3>{{ 'menu.certifications' | translate }}</h3>
 
-  <h3>{{ 'menu.certifications' | translate }}</h3>
+        <div *ngIf="lang == 'en'">
+          <p>A.M. Web Expert is convinced that training and certification are not only proof of competence, but a way of learning
+            the technologies according to the rules of the art. This is why the following certifications have been obtained over
+            the years as continuing education:</p>
+        </div>
 
-  <div *ngIf="lang == 'en'">
-    <p>A.M. Web Expert is convinced that training and certification are not only proof of competence, but a way of learning
-      the technologies according to the rules of the art. This is why the following certifications have been obtained over
-      the years as continuing education:</p>
+        <div *ngIf="lang == 'fr'">
+          <p>A.M. Web Expert est convaincu que les formations et certifications sont non seulement les preuves de compétence, mais
+            une manière d'apprendre les technologies selon les r&#232;gles de l'art. C'est pourquoi les certifications suivantes
+            ont été obtenues au fil des années en tant que formation continue :</p>
+        </div>
+
+        <p>{{ 'menu.technologies' | translate }}</p>
+
+        <ul>
+          <li>Pluralsight - Angular, CSS, RxJS</li>
+          <li>Actuate eDesigner Pro</li>
+        </ul>
+
+        <p>Java Platform, Enterprise Edition (Java EE)</p>
+
+        <ul>
+          <li>Certified WebSphere Portal 5.0 Developer</li>
+          <li>SCJP (Sun Certified Java Programmer)</li>
+          <li>SCWCD (Sun Certified Web Component Developer)</li>
+        </ul>
+            </div>
+    </div>
   </div>
-
-  <div *ngIf="lang == 'fr'">
-    <p>A.M. Web Expert est convaincu que les formations et certifications sont non seulement les preuves de compétence, mais
-      une manière d'apprendre les technologies selon les r&#232;gles de l'art. C'est pourquoi les certifications suivantes
-      ont été obtenues au fil des années en tant que formation continue :</p>
-  </div>
-
-  <p>{{ 'menu.technologies' | translate }}</p>
-
-  <ul>
-    <li>Pluralsight - Angular, CSS, RxJS</li>
-    <li>Actuate eDesigner Pro</li>
-  </ul>
-
-  <p>Java Platform, Enterprise Edition (Java EE)</p>
-
-  <ul>
-    <li>Certified WebSphere Portal 5.0 Developer</li>
-    <li>SCJP (Sun Certified Java Programmer)</li>
-    <li>SCWCD (Sun Certified Web Component Developer)</li>
-  </ul>
-
 </div>
+
 
 <div class="row">
   <div class="col-md-4 text-center" [ngClass]="{'small-devices-spacing': !atLeastMediumDevice()}">
