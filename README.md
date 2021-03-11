@@ -13,6 +13,13 @@ Technologies:
 
 * http://amwebexpert.users.sourceforge.net/
 
+
+# Build and deploy
+
+    `./build.sh`
+
+Then copy the whole `dist` folder content to your target webserver.
+
 # Licence
 
 This project is licensed under the Apache 2.0 license. For more information see `LICENSE.md`.
