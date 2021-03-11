@@ -1,13 +1,13 @@
 import { VERSION } from '@angular/core';
 
-declare var bootstrap: any; // global reference
+declare const bootstrap: any; // global reference
 
 /**
  * Application constants
  */
 export class AppConstants {
 
-  public static DATE = '2021-03-09';
+  public static DATE = '2021-03-11';
   public static APP_TITLE = 'amwebexpert';
   public static AUTHOR_NAME = 'André Masson';
   public static APP_TITLE_VERSION: string = AppConstants.APP_TITLE + ' - ' + AppConstants.DATE;

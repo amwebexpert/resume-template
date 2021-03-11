@@ -1,7 +1,7 @@
 {
   "name": "amwebexpert-resume-template",
   "version": "1.0.0",
-  "license": "MIT",
+  "license": "Apache License 2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
