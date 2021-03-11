@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { AppConstants } from '../app.constants';
 
 @Component({
-  selector: 'app-top-horizontal-navbar',
-  templateUrl: './top-horizontal-navbar.component.html',
-  styleUrls: ['./top-horizontal-navbar.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class TopHorizontalNavbarComponent implements OnInit {
+export class NavbarComponent implements OnInit {
 
   appTitleVersion = AppConstants.APP_TITLE_VERSION;
   authorName = AppConstants.AUTHOR_NAME;
