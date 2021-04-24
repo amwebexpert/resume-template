@@ -6,6 +6,7 @@ Added support for English and French languages using `ngx-translate`.
 Technologies:
 
 - Angular 11.x
+- ngx-translate for i18n
 - Bootstrap 5
 - Typescript
 
@@ -14,11 +15,13 @@ Technologies:
 * http://amwebexpert.users.sourceforge.net/
 
 
-# Build and deploy
+# Update, Build and deploy
+
+First thing to do before you forget: update `AppConstants.DATE` value to the current date. Also update pages as required. Then you produce the production build by launching this script:
 
     `./build.sh`
 
-Then copy the whole `dist` folder content to your target webserver.
+Then copy the whole `dist/` folder content to your target webserver.
 
 # Licence
 
