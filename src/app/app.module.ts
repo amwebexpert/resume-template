@@ -21,6 +21,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
 import { GithubUserProjectsService } from './services/github-user-projects.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavbarComponent } from './navbar/navbar.component';
+import { CsvViewerComponent } from './privacy-policies/csv-viewer/csv-viewer.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -65,6 +66,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     ContactsComponent,
     DemosComponent,
     NavbarComponent,
+    CsvViewerComponent,
   ],
   bootstrap: [AppComponent]
 })

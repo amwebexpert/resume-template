@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card border-light shadow-sm">
+
+        <div class="card-body" *ngIf="lang == 'en'">
+        <h1>CSV Viewer</h1>
+        <h2>Privacy Policy</h2>
+        <h3>We don't store your data, period.</h3>
+        <ul>
+            <li>We physically can’t.</li>
+            <li>We have nowhere to store it.</li>
+            <li>We don’t even have a server database to store it.</li>
+        </ul>
+      </div>
+
+      <div class="card-body" *ngIf="lang == 'fr'">
+        <h1>CSV Viewer</h1>
+        <h2>Politique de confidentialité</h2>
+        <h3>Nous ne collectons aucune de vos données, point à la ligne.</h3>
+        <ul>
+            <li>Nous ne pouvons tout simplement pas techniquement parlant.</li>
+            <li>Nous n'avons aucun serveur sur lequel stocker les informations.</li>
+            <li>Nous n'avons aucune base de données sur le serveur pour stocker quoi que ce soit.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>

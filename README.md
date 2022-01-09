@@ -23,7 +23,7 @@ First thing to do before you forget: update `AppConstants.DATE` value to the cur
 
 Then copy the whole `dist/` folder content to your target webserver.
 
-# Licence
+# License
 
 This project is licensed under the Apache 2.0 license. For more information see `LICENSE.md`.
 

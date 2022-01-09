@@ -7,6 +7,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { DemosComponent } from './demos/demos.component';
 import { HomeComponent } from './home/home.component';
 import { MembersComponent } from './members/members.component';
+import { CsvViewerComponent } from './privacy-policies/csv-viewer/csv-viewer.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 
 
@@ -42,6 +43,10 @@ const routes: Routes = [
   {
     path: 'demos',
     component: DemosComponent,
+  },
+  {
+    path: 'privacy-policies/csv-viewer',
+    component: CsvViewerComponent,
   },
   {
     path: '',
