@@ -5,10 +5,10 @@ Added support for English and French languages using `ngx-translate`.
 
 Technologies:
 
-- Angular 11.x
+- Angular 13.x
 - ngx-translate for i18n
-- Bootstrap 5
-- Typescript
+- Bootstrap 5.x
+- Typescript 4.x
 
 # Live demo available
 
