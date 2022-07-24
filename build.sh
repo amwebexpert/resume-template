@@ -12,8 +12,8 @@ echo ---------------------------------------------------------------------------
 echo "adding (and pushing) new ./docs file changes to current branch"
 echo ------------------------------------------------------------------------------
 git add .
-#git commit -m"docs: new online web release"
-#git push
+git commit -m"docs: new online web release"
+git push
 
 echo ------------------------------------------------------------------------------
 echo "Done."
