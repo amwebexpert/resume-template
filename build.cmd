@@ -1,8 +1,8 @@
 @echo off
 echo ------------------------------------------------------------------------------
-echo ng build --prod
+echo ng build --configuration production
 echo ------------------------------------------------------------------------------
-call ng build --prod
+call ng build --configuration production
 
 echo ------------------------------------------------------------------------------
 echo "Done."

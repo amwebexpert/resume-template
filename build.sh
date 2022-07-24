@@ -1,7 +1,7 @@
 echo ------------------------------------------------------------------------------
-echo ng build --prod
+echo ng build --configuration production
 echo ------------------------------------------------------------------------------
-npx ng build --prod
+npx ng build --configuration production
 
 echo ------------------------------------------------------------------------------
 echo "Done."
