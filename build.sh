@@ -1,7 +1,7 @@
 echo ------------------------------------------------------------------------------
-echo ng build --configuration production --base-href /resume-template/
+echo ng build --configuration production
 echo ------------------------------------------------------------------------------
-npx ng build --configuration production --base-href /resume-template/
+npx ng build --configuration production
 
 echo ------------------------------------------------------------------------------
 echo "copying ./dist content ===> ./docs folder ..."
@@ -12,8 +12,8 @@ echo ---------------------------------------------------------------------------
 echo "adding (and pushing) new ./docs file changes to current branch"
 echo ------------------------------------------------------------------------------
 git add .
-git commit -m"docs: new online web release"
-git push
+#git commit -m"docs: new online web release"
+#git push
 
 echo ------------------------------------------------------------------------------
 echo "Done."
