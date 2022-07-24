@@ -25,11 +25,12 @@ This will:
 
 - build for production
 - copy the whole `dist/` folder content to the `docs/` folder
-- do a `git` `add`, `commit` and `push`
+- run source control commands: `git` `add`, `commit` and `push`
 
 Wait for Github Pages to be ready, then the resume will be available online at this address:
 
--
+- https://<your-github-account-id>.github.io/resume-template
+- Example: https://amwebexpert.github.io/resume-template
 
 # License
 
