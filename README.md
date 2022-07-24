@@ -21,7 +21,15 @@ First thing to do before you forget: update `AppConstants.DATE` value to the cur
 
     `./build.sh`
 
-Then copy the whole `dist/` folder content to your target webserver.
+This will:
+
+- build for production
+- copy the whole `dist/` folder content to the `docs/` folder
+- do a `git` `add`, `commit` and `push`
+
+Wait for Github Pages to be ready, then the resume will be available online at this address:
+
+-
 
 # License
 
