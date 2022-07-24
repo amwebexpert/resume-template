@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-12">
+  <div class="col-12 col-md-5 col-sm-12">
     <div class="card border-light shadow-sm">
       <div class="card-body">
         <h2>{{ "welcome.title" | translate }}</h2>
@@ -45,6 +45,45 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="col-12 col-md-7 col-sm-12">
+    <div class="card border-light shadow-sm">
+      <div class="card-body">
+        <h2 *ngIf="lang == 'fr'">Développement mobile et natif</h2>
+        <h2 *ngIf="lang == 'en'">Mobile & Native development</h2>
+
+        <div *ngIf="lang == 'fr'">
+          <p>Spécialisation mobile (Flutter et react-native)</p>
+          <ul>
+            <li>architecture technique de l'app, design de solution et développement actif</li>
+            <li>mise en place de l'aspect sécurité: authentification et autorisation OAuth 2</li>
+            <li>conception d'écrans et d'animations, thème, typographie, dark mode, préférences, persistance locale</li>
+            <li>tests unitaires et behaviorals automatisés, tests end to end, rapport de couverture de code</li>
+            <li>structure evolutive du code source, choix des libraires open source</li>
+            <li>intégration des API Rest et/ou GraphQL</li>
+            <li>ingestion de dépendances IoC dans l'app </li>
+            <li>mise en place des bonnes pratiques, guide de développement, revues de code, sessions de formations </li>
+            <li>automatisation des builds, outils de génération de code pour intégrer aux API existants</li>
+            <li>mise en place d'une solution de feature flags, intégration au monitoring de production</li>
+          </ul>
+        </div>
+        <div *ngIf="lang == 'en'">
+          <p>Mobile first specialization (Flutter & react-native)</p>
+          <ul>
+            <li>app technical architecture, solution design and active development</li>
+            <li>implementation of the security aspect: OAuth 2 authentication and authorization</li>
+            <li>screen and animation design, theme, typography, dark mode, preferences, local persistence</li>
+            <li>automated unit and behavioral tests, end to end tests, code coverage report</li>
+            <li>evolutive structure of the source code, choice of open source libraries</li>
+            <li>integration of Rest and/or GraphQL APIs</li>
+            <li>dependencies injections pattern (IoC) for the whole application</li>
+            <li>implementation of best practices, development guide, code reviews, training sessions</li>
+            <li>build automation, code generation tools to integrate with existing APIs</li>
+            <li>implementation of feature flags solution, integration into production monitoring</li>
+          </ul>
+        </div>
+      </div>
+  </div>
   </div>
 </div>
 
