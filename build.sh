@@ -1,7 +1,7 @@
 echo ------------------------------------------------------------------------------
-echo ng build --configuration production
+echo ng build --configuration production --base-href /resume-template/
 echo ------------------------------------------------------------------------------
-npx ng build --configuration production
+npx ng build --configuration production --base-href /resume-template/
 
 echo ------------------------------------------------------------------------------
 echo "copying ./dist content ===> ./docs folder ..."
