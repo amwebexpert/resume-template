@@ -8,5 +8,15 @@
         "50:53:12:FF:D6:26:1B:1C:F2:6F:1F:DF:CD:B0:A0:D8:20:54:BB:A0:57:41:B1:6A:E6:B6:F7:27:ED:E6:ED:3E"
       ]
     }
+  },
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.amwebexpert.ws_poker_planning_app",
+      "sha256_cert_fingerprints": [
+        "50:53:12:FF:D6:26:1B:1C:F2:6F:1F:DF:CD:B0:A0:D8:20:54:BB:A0:57:41:B1:6A:E6:B6:F7:27:ED:E6:ED:3E"
+      ]
+    }
   }
 ]
