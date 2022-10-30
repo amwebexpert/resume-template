@@ -5,7 +5,8 @@
       "namespace": "android_app",
       "package_name": "com.amwebexpert.app.guessthetext.guess_the_text",
       "sha256_cert_fingerprints": [
-        "50:53:12:FF:D6:26:1B:1C:F2:6F:1F:DF:CD:B0:A0:D8:20:54:BB:A0:57:41:B1:6A:E6:B6:F7:27:ED:E6:ED:3E"
+        "50:53:12:FF:D6:26:1B:1C:F2:6F:1F:DF:CD:B0:A0:D8:20:54:BB:A0:57:41:B1:6A:E6:B6:F7:27:ED:E6:ED:3E",
+        "62:22:54:16:7A:6F:8E:E2:A0:60:DA:54:13:19:17:1B:AC:25:6B:88:FB:63:18:FF:61:82:5F:CA:1F:9F:48:33"
       ]
     }
   },
